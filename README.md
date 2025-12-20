@@ -1,3 +1,5 @@
+![Playwright Tests](https://github.com/Samiksha-Ghimire/python-playwright-automation/actions/workflows/playwright-tests.yml/badge.svg) 
+
 # Playwright Automation Framework (Python)
 This repository contains UI automation tests implemented using Playwright, Python, and Pytest.
 The framework uses a basic Page Object Model structure and includes login scenarios and a complete checkout process for the SauceDemo application.
