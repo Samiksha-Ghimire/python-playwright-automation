@@ -14,9 +14,9 @@ Key components include:
 
 
 
-## Project Structure
+## Project Structure 
 
-
+```
 
 pages/ Page Object classes
 tests/ Test cases by feature
@@ -25,8 +25,9 @@ reports/ HTML reports
 screenshots/ Failure screenshots
 .github/workflows/ CI pipeline configuration
 conftest.py Pytest setup and screenshot hook
-requirements.txt Dependencies
+requirements.txt Dependencies 
 
+```
 
 
 ## Test Coverage
@@ -50,30 +51,31 @@ requirements.txt Dependencies
 
 
 ## Running Tests Locally
-Install dependencies:
+Install dependencies: 
 
-pip install -r requirements.txt
+```
+pip install -r requirements.txt 
+```
 
+Install Playwright browsers: 
+```
+playwright install 
+```
 
-Install Playwright browsers:
+Run all tests: 
+```
+pytest 
+```
 
-playwright install
+Run with browser visible: 
+```
+pytest --headed 
+```
 
-
-Run all tests:
-
-pytest
-
-
-Run with browser visible:
-
-pytest --headed
-
-
-Generate an HTML report:
-
-pytest --html=reports/report.html --self-contained-html
-
+Generate an HTML report: 
+```
+pytest --html=reports/report.html --self-contained-html 
+```
 
 
 ## Continuous Integration (GitHub Actions)
