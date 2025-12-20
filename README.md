@@ -5,56 +5,75 @@ The framework uses a basic Page Object Model structure and includes login scenar
 
 ## Framework Overview
 Key components include:
-•	Page Object classes for different application screens
-•	Test modules grouped by feature
-•	HTML test reporting
-•	Automatic screenshot capture for failed runs
-•	GitHub Actions workflow to run tests in CI
+
+- Page Object classes for different application screens
+- Test modules grouped by feature
+- HTML test reporting
+- Automatic screenshot capture for failed runs
+- GitHub Actions workflow to run tests in CI
+
 
 
 ## Project Structure
-pages/                  Page Object classes
-tests/                  Test cases by feature
-utils/                  Configuration values
-reports/                HTML reports
-screenshots/            Failure screenshots
-.github/workflows/      CI pipeline configuration
-conftest.py             Pytest setup and screenshot hook
-requirements.txt        Dependencies
+
+
+
+pages/ Page Object classes
+tests/ Test cases by feature
+utils/ Configuration values
+reports/ HTML reports
+screenshots/ Failure screenshots
+.github/workflows/ CI pipeline configuration
+conftest.py Pytest setup and screenshot hook
+requirements.txt Dependencies
+
 
 
 ## Test Coverage
-Login Tests
-•	Valid login
-•	Invalid username
-•	Invalid password
-•	Empty fields
-•	Locked-out user
-Checkout Flow
-•	Login
-•	Add item to cart
-•	Open cart
-•	Proceed to checkout
-•	Enter personal information
-•	Complete order
-•	Verify confirmation message
+### Login Tests
+
+- Valid login
+- Invalid username
+- Invalid password
+- Empty fields
+- Locked-out user
+
+### Checkout Flow
+
+- Login
+- Add item to cart
+- Open cart
+- Proceed to checkout
+- Enter personal information
+- Complete order
+- Verify confirmation message
 
 
 ## Running Tests Locally
 Install dependencies:
+
 pip install -r requirements.txt
 
+
 Install Playwright browsers:
+
 playwright install
 
+
 Run all tests:
+
 pytest
 
+
 Run with browser visible:
+
 pytest --headed
 
+
 Generate an HTML report:
+
 pytest --html=reports/report.html --self-contained-html
+
 
 
 ## Continuous Integration (GitHub Actions)
